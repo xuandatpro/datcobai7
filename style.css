@@ -1,0 +1,126 @@
+header{
+    display: flex;
+    flex-direction:  row;
+    height: 70px;
+    background-color:rgb(239, 242, 246);
+    position: fixed;
+top: 0;
+left: 0;
+    width: 100%;
+}
+
+header>p{
+    font-size:x-large;
+    font-weight: bold;
+    font-family:'Dancing Script';
+    font-style: oblique;
+    margin-left: 10px ;}
+/* Container */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.menu {
+    margin-top: 5px;
+   
+    padding-top:5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(239, 242, 246);
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.menu>.item{
+border-right:2px solid black ;
+width: 180px;
+margin:15px;
+text-align: center;
+}
+.menu>.item4{
+    width: 170px;
+margin:15px;
+text-align: center;
+}
+body{
+    width:100%;
+    margin-top: 80px;
+}
+.container{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+/*sidebar */
+.sidebar{
+    
+    width: 30%;
+   float: left;
+    background-color: rgb(239, 242, 246) ;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.sidebar img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+    
+}
+.sidebar .title{
+display: flex;
+flex-direction: row;
+}
+.title a{
+    margin:5px
+}
+.sidebar p{
+    width: 100%;
+    font-size:medium ;
+    opacity: 0.8;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.sidebar .item{
+    margin-bottom: 10px;
+    background-color: rgb(193, 218, 239);
+    border-radius: 5px;
+    
+}
+/*Main*/
+.mainvideo{
+    margin-left: 20px;
+    width: 70%;
+  
+}
+iframe {
+    width:100% ;
+    height: 500px;   
+}
+.sub p{
+font-size: large;
+opacity: 0.8;
+}
+/*footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    background-color:rgb(239, 242, 246) ;
+    height: 40px;
+}
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu,.sidebar,.mainvideo{
+      width:100%;
+    }
+    .container{
+        flex-direction: column;
+    }
+   
+  }
+
